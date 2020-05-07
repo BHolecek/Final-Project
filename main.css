@@ -1,0 +1,138 @@
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, auto);
+    grid-gap: 15px;
+    grid-template-areas: "head" "News" "Sports" "Weather" "Contact" "foot";
+    padding: 20px;
+}
+
+main, section, article, aside {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+figure, table {
+    width: 450px;
+    padding: 15px;
+}
+
+figcaption {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px
+    margin: 10px auto;
+}
+
+table, tr, td {
+    border: 1px
+    border-collapse: collapse;
+}
+
+tr:nth-child(2), td:nth-child(2) {
+    text-align: center;
+}
+
+tr:nth-child(3), td:nth-child(3) {
+    text-align: center;
+}
+
+tr:nth-child(4), td:nth-child(4) {
+    text-align: center;
+}
+
+tr:nth-child(5), td:nth-child(5) {
+    text-align: center;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+label, input, select {
+    font-size: 90%;
+}
+
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+
+input:required, input[required] {
+    border: 3px
+}
+
+input:valid {
+    border: 1px
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+br {
+    clear: both;
+}
+
+#buttons input {
+    width: 10em;
+}
+
+footer {grid-area: "foot"}
+
+header, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        background-color:
+
+@media screen and (min-width: 768px) {
+        
+    body{font-size: 24px;
+    display: grid;
+grid-template-columns: repeat(3, auto);
+grid-template-rows: repeat(2, auto);
+grid-gap: align;
+grid-template-areas: "News" "Sports" "Weather" "Contact"
+    }
